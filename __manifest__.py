@@ -25,7 +25,11 @@
     'data': [
         'security/tdsimodel_security.xml',
         'datas/datas.xml',
+        'views/schoolmanager_agenda_views.xml',
         'views/schoolmanager_course_views.xml',
+        'views/schoolmanager_classe_views.xml',
+        'views/schoolmanager_student_views.xml',
+        'views/schoolmanager_teacher_views.xml',
         'schoolmanager_menu.xml',
         'security/ir.model.access.csv',
     ],

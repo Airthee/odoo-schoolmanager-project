@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+  	<!-- Vue form -->
+    <record model="ir.ui.view" id="schoolmanager.classe_form_view">
+        <field name="name">schoolmanager.classe.form</field>
+        <field name="model">schoolmanager.classe</field>
+        <field name="arch" type="xml">
+            <form string="Classe">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <span class="oe_inline">Classe</span>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="level" />
+                            <field name="teacher_id" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue tree -->
+    <record model="ir.ui.view" id="schoolmanager.classe_tree_view">
+      <field name="name">schoolmanager.classe.tree</field>
+      <field name="model">schoolmanager.classe</field>
+      <field name="arch" type="xml">
+        <tree string="Classe">
+            <field name="name" />
+            <field name="level" />
+            <field name="teacher_id" />
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record id="schoolmanager.classe_action" model="ir.actions.act_window">
+    	<field name="name">Classe</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">schoolmanager.classe</field>
+    	<field name="view_type">form</field>
+    	<field name="view_mode">tree,form</field>
+    </record>
+    
+  </data>
+</odoo>

@@ -8,16 +8,19 @@
         <menuitem id="menu_schoolmanager_config" parent="menu_schoolmanager_root"
             name="Configuration" sequence="16"/>
             
-<!--             <menuitem id="menu_res_classes_admin" parent="menu_schoolmanager_config"
-                action="base.action_res_classes_form" sequence="10" name="Classes"/> -->
-<!-- 
-            <menuitem id="menu_res_professors_admin" parent="menu_schoolmanager_config"
-                action="base.action_res_professors_form" sequence="10" name="Professeurs"/>
+            <menuitem id="menu_res_classes_admin" parent="menu_schoolmanager_config"
+                action="schoolmanager.classe_action" sequence="10" name="Classes"/>
+
+            <menuitem id="menu_res_teachers_admin" parent="menu_schoolmanager_config"
+                action="schoolmanager.teacher_action" sequence="10" name="Professeurs"/>
 
             <menuitem id="menu_res_students_admin" parent="menu_schoolmanager_config"
-                action="base.action_res_students_form" sequence="10" name="Elèves"/> -->
+                action="schoolmanager.student_action" sequence="10" name="Elèves"/>
 
             <menuitem id="menu_res_courses_admin" parent="menu_schoolmanager_config"
                 action="schoolmanager.course_action" sequence="10" name="Cours"/>
+           
+            <menuitem id="menu_res_courses_admin" parent="menu_schoolmanager_config"
+                action="schoolmanager.agenda_action" sequence="10" name="Agenda"/>
     </data>
 </openerp>
