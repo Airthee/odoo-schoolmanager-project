@@ -1,4 +1,5 @@
 <odoo>
+  <data>
   	<!-- Vue form -->
     <record model="ir.ui.view" id="schoolmanager.agenda_form_view">
         <field name="name">schoolmanager.agenda.form</field>
@@ -49,4 +50,5 @@
     	<field name="view_mode">tree,form</field>
     </record>
     
+  </data>
 </odoo>
