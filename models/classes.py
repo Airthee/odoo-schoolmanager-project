@@ -10,6 +10,12 @@ class classe(models.Model):
     level = fields.Selection([('seconde', 'Seconde'), ('premiere', 'Première'), ('terminal', 'Terminale')])
     teacher_id = fields.Many2one('schoolmanager.teacher', string="Professeur")
     student_ids = fields.One2many('schoolmanager.student', 'class_id', string="Elèves")
+    nbStudents = fields.Integer(compute='_compute_nbStudents')
+
+    @api.depends('student_ids')
+    def _compute_nbStudents(self):
+        for record in self:
+            record.nbStudents = len(record.student_ids)
 
     # value = fields.Integer()
     # value2 = fields.Float(compute="_value_pc", store=True)

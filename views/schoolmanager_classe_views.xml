@@ -17,6 +17,7 @@
                             <field name="name" />
                             <field name="level" />
                             <field name="teacher_id" />
+                            <field name="student_ids" />
                         </group>
                     </group>
                 </sheet>
@@ -33,6 +34,7 @@
             <field name="name" />
             <field name="level" />
             <field name="teacher_id" />
+            <field name="nbStudents" />
         </tree>
       </field>
     </record>
