@@ -11,6 +11,7 @@ class classe(models.Model):
     teacher_id = fields.Many2one('schoolmanager.teacher', string="Professeur")
     student_ids = fields.One2many('schoolmanager.student', 'class_id', string="Elèves")
     nbStudents = fields.Integer(compute='_compute_nbStudents')
+    agenda_ids = fields.One2many('schoolmanager.agenda', 'class_id', string="Agenda entries")
 
     @api.depends('student_ids')
     def _compute_nbStudents(self):
