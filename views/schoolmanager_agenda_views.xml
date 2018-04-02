@@ -31,7 +31,7 @@
       <field name="name">schoolmanager.agenda.tree</field>
       <field name="model">schoolmanager.agenda</field>
       <field name="arch" type="xml">
-        <tree string="Agenda">
+        <tree string="Agenda" default_order="date_start asc">
             <field name="date_start" />
             <field name="date_stop" />
             <field name="room" />
