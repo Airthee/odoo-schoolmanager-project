@@ -18,6 +18,7 @@
                             <field name="lastname" />
                             <field name="birthdate" />
                             <field name="age" />
+                            <field name="class_id" />
                         </group>
                     </group>
                 </sheet>
@@ -35,6 +36,7 @@
             <field name="lastname" />
             <field name="birthdate" />
             <field name="age" />
+            <field name="class_id" />
         </tree>
       </field>
     </record>
